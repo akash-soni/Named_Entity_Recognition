@@ -125,6 +125,13 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+# data files
+dataset_dict.json
+dataset_info.json
+dataset.arrow
+state.json
+dataset_info.json
+
 # Pyre type checker
 .pyre/
 

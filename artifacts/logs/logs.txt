@@ -1,0 +1,42 @@
+[ 2022-08-10 12:04:20,404 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-10 12:04:21,688 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 12:04:21,688 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 12:04:21,689 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 12:04:21,689 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 12:04:37,671 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-10 12:04:37,698 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-10 12:04:37,979 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-10 12:04:37,988 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-10 12:04:37,989 ] ner.components.data_ingestion - INFO - No data storage directory found creating directory
+[ 2022-08-10 12:04:37,995 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+[ 2022-08-10 12:04:39,803 ] urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-08-10 12:04:39,825 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-08-10 12:04:40,510 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/xtreme.py HTTP/1.1" 200 0
+[ 2022-08-10 12:04:40,552 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[ 2022-08-10 12:04:41,409 ] urllib3.connectionpool - DEBUG - https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/1.13.0/datasets/xtreme/dataset_infos.json HTTP/1.1" 200 0
+[ 2022-08-10 12:04:41,692 ] datasets.builder - WARNING - Reusing dataset xtreme (C:\Users\aakas\.cache\huggingface\datasets\xtreme\PAN-X.en\1.0.0\fb182342ff5c7a211ebf678cde070463acd29524b30b87f8f38c617948c2826a)
+[ 2022-08-10 12:04:41,840 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-10 12:04:41,846 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/validation/dataset.arrow
+[ 2022-08-10 12:04:41,864 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/validation/state.json
+[ 2022-08-10 12:04:41,866 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/validation/dataset_info.json
+[ 2022-08-10 12:04:41,872 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/test/dataset.arrow
+[ 2022-08-10 12:04:41,880 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/test/state.json
+[ 2022-08-10 12:04:41,882 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/test/dataset_info.json
+[ 2022-08-10 12:04:41,887 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/train/dataset.arrow
+[ 2022-08-10 12:04:41,901 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/train/state.json
+[ 2022-08-10 12:04:41,903 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/train/dataset_info.json
+[ 2022-08-10 12:04:41,905 ] ner.components.data_ingestion - INFO - Dataset loading completed
+[ 2022-08-10 12:04:41,906 ] ner.components.data_ingestion - INFO - Dataset Info : DatasetDict({
+    validation: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['tokens', 'ner_tags', 'langs'],
+        num_rows: 20000
+    })
+})
