@@ -10,8 +10,8 @@ site_description: >-
   DESCRIPTION
 
 # Repository
-repo_name:  akash-soni/NER-Project 
-repo_url: https://github.com/akash-soni/NER-Project 
+repo_name:  akash-soni/Named_Entity_Recognition
+repo_url: https://github.com/akash-soni/Named_Entity_Recognition
 
 # Configuration
 theme:
