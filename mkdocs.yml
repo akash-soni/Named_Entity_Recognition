@@ -4,6 +4,7 @@ site_name: NER-Project on Xtreme Dataset PAN-X en
 nav:
   - Home: index.md
   - Ingestion: Data Ingestion.md
+  - Validation: Data Validation.md
 
 site_author: Akash soni
 site_description: >-

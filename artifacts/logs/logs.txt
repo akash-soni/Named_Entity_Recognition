@@ -40,3 +40,83 @@
         num_rows: 20000
     })
 })
+[ 2022-08-10 23:02:38,575 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-10 23:02:39,911 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:02:39,911 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:02:39,911 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:02:39,911 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:02:53,386 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-10 23:02:53,405 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-10 23:02:53,415 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-10 23:02:53,416 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-10 23:02:53,416 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-10 23:02:53,425 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-10 23:02:53,600 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-10 23:15:12,587 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-10 23:15:12,994 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:15:12,994 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:15:12,994 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:15:12,994 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:17:16,730 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-10 23:17:17,144 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:17:17,144 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:17:17,144 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:17:17,144 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:20:28,473 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-10 23:20:28,916 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:20:28,916 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:20:28,916 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:20:28,916 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:20:34,169 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-10 23:20:34,185 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-10 23:20:34,191 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-10 23:20:34,192 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-10 23:20:34,192 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-10 23:20:34,200 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-10 23:20:34,228 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-10 23:20:34,228 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-10 23:20:34,229 ] __main__ - ERROR - 'Configuration' object has no attribute 'get_data_validation_config'
+Traceback (most recent call last):
+  File "c:\Users\aakas\Documents\ineuron\Projects\NLP\Named_Entity_Recognition\ner\pipline\train_pipeline.py", line 29, in run_data_validation
+    validation = DataValidation(data_validation_config=self.config.get_data_validation_config(),
+AttributeError: 'Configuration' object has no attribute 'get_data_validation_config'
+[ 2022-08-10 23:20:42,490 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-10 23:20:42,963 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:20:42,963 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:20:42,963 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-10 23:20:42,963 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-10 23:20:49,083 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-10 23:20:49,096 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-10 23:20:49,102 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-10 23:20:49,103 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-10 23:20:49,104 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-10 23:20:49,116 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-10 23:20:49,142 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-10 23:20:49,142 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-10 23:20:49,142 ] __main__ - ERROR - 'Configuration' object has no attribute 'get_data_validation_config'
+Traceback (most recent call last):
+  File "c:\Users\aakas\Documents\ineuron\Projects\NLP\Named_Entity_Recognition\ner\pipline\train_pipeline.py", line 29, in run_data_validation
+    validation = DataValidation(data_validation_config=self.config.get_data_validation_config(),
+AttributeError: 'Configuration' object has no attribute 'get_data_validation_config'
+[ 2022-08-11 00:06:38,209 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-11 00:06:38,907 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 00:06:38,907 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 00:06:38,907 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 00:06:38,907 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 00:06:46,378 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-11 00:06:46,393 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-11 00:06:46,397 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-11 00:06:46,398 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-11 00:06:46,398 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-11 00:06:46,405 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-11 00:06:46,458 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-11 00:06:46,458 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-11 00:06:46,458 ] ner.components.data_validation - INFO -  Data Validation Started 
+[ 2022-08-11 00:06:46,458 ] ner.components.data_validation - INFO -  Checks Initiated  
+[ 2022-08-11 00:06:46,458 ] ner.components.data_validation - INFO -  Checking Columns of all the splits 
+[ 2022-08-11 00:06:53,490 ] ner.components.data_validation - INFO -  Check Results [3, 3, 3]
+[ 2022-08-11 00:06:53,490 ] ner.components.data_validation - INFO -  Checking type check of all the splits 
+[ 2022-08-11 00:06:53,490 ] ner.components.data_validation - INFO -  Type Check Results [3, 3, 3]
+[ 2022-08-11 00:06:53,490 ] ner.components.data_validation - INFO -  Checking null check of all the splits 
+[ 2022-08-11 00:06:59,747 ] ner.components.data_validation - INFO -  Type Check Results [False, False, False]
+[ 2022-08-11 00:06:59,749 ] ner.components.data_validation - INFO -  Checks Completed Result : [[True, True, True]]

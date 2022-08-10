@@ -1,5 +1,6 @@
 from ner.config.configurations import Configuration
 from ner.components.data_ingestion import DataIngestion
+from ner.components.data_validation import DataValidation
 from ner.exception.exception import CustomException
 from typing import Any, Dict, List
 import logging
@@ -22,8 +23,22 @@ class Pipeline:
             raise CustomException(e, sys)
 
 
+    def run_data_validation(self, data) -> List[List[bool]]:
+        try:
+            logger.info(" Running Data validation Pipeline ")
+            validation = DataValidation(data_validation_config=self.config.get_data_validation_config(),
+                                        data=data)
+            checks = validation.drive_checks()
+            return checks
+        except Exception as e:
+            logger.exception(e)
+            raise CustomException(e, sys)
+
+
+
     def run_pipeline(self):
         data = self.run_data_ingestion()
+        checks = self.run_data_validation(data=data)
 
 
 if __name__ == "__main__":
