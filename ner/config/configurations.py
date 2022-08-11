@@ -2,7 +2,7 @@ from lib2to3.pgen2 import token
 import os
 from ner.utils.util import read_config
 from ner.exception.exception import CustomException
-from ner.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataPreprocessingConfig
+from ner.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataPreprocessingConfig, ModelTrainConfig
 from transformers import AutoTokenizer, AutoConfig
 from from_root import from_root
 from ner.constants import *
@@ -79,7 +79,7 @@ class Configuration:
             tokenizer_store = os.path.join(from_root(), self.config[PATH_KEY][ARTIFACTS_KEY],
                                       self.config[PATH_KEY][TOKENIZER_PATH])
             print(tokenizer_store)
-            
+
             # loading pretrained "xlm-roberta-base" model
             if not os.path.isdir(tokenizer_store):
                 os.mkdir(tokenizer_store)
@@ -96,6 +96,60 @@ class Configuration:
                 tokenizer=tokenizer
             )
             return data_preprocessing_config
+        except Exception as e:
+            logger.exception(e)
+            raise CustomException(e, sys)
+
+    def get_model_train_pipeline_config(self) -> ModelTrainConfig:
+        try:
+            model_name = self.config[BASE_MODEL_CONFIG][BASE_MODEL_NAME]
+
+            tokenizer_store = os.path.join(from_root(), self.config[PATH_KEY][ARTIFACTS_KEY],
+                            self.config[PATH_KEY][TOKENIZER_PATH])
+            # loading pretrained "xlm-roberta-base" model
+            if not os.path.isdir(tokenizer_store):
+                print("hit if block")
+                os.mkdir(tokenizer_store)
+                tokenizer = AutoTokenizer.from_pretrained(self.config[BASE_MODEL_CONFIG][BASE_MODEL_NAME])
+                tokenizer.save_pretrained(tokenizer_store)
+                
+            else:
+                print("hit else block")
+                tokenizer = AutoTokenizer.from_pretrained(tokenizer_store)
+                print("tokenizer loaded")
+
+            tags = self.config[DATA_PREPROCESSING_KEY][NER_TAGS_KEY]
+
+            index2tag = {idx: tag for idx, tag in enumerate(tags)}
+            tag2index = {tag: idx for idx, tag in enumerate(tags)}
+
+            xlmr_config = AutoConfig.from_pretrained(self.config[BASE_MODEL_CONFIG][BASE_MODEL_NAME],
+                                                     num_labels=self.config[BASE_MODEL_CONFIG][NUM_CLASSES],
+                                                     id2label=index2tag,
+                                                     label2id=tag2index)
+
+            epochs = self.config[BASE_MODEL_CONFIG][NUM_EPOCHS]
+            batch_size = self.config[BASE_MODEL_CONFIG][BATCH_SIZE]
+            save_steps = self.config[BASE_MODEL_CONFIG][SAVE_STEPS]
+
+            roberta_store = os.path.join(from_root(), self.config[PATH_KEY][ARTIFACTS_KEY],
+                                      self.config[PATH_KEY][ROBERTA_PATH])            
+            output_dir = os.path.join(from_root(), ARTIFACTS_KEY, MODEL_WEIGHT_KEY)
+
+            model_train_config = ModelTrainConfig(
+                model_name=model_name,
+                index2tag=index2tag,
+                tag2index=tag2index,
+                tokenizer=tokenizer,
+                xlmr_config=xlmr_config,
+                epochs=epochs,
+                batch_size=batch_size,
+                save_steps=save_steps,
+                roberta_path = roberta_store,
+                output_dir=output_dir
+            )
+
+            return model_train_config
         except Exception as e:
             logger.exception(e)
             raise CustomException(e, sys)

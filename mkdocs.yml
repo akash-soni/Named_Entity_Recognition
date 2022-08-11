@@ -6,6 +6,7 @@ nav:
   - Ingestion: Data Ingestion.md
   - Validation: Data Validation.md
   - Data Preperation: Data Preperation.md
+  - Model Training: Model Training.md
 
 site_author: Akash soni
 site_description: >-

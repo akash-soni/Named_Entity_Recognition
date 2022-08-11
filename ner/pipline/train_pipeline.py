@@ -2,6 +2,7 @@ from ner.config.configurations import Configuration
 from ner.components.data_ingestion import DataIngestion
 from ner.components.data_validation import DataValidation
 from ner.components.data_preperation import DataPreprocessing
+from ner.components.model_training import TrainTokenClassifier
 from ner.exception.exception import CustomException
 from typing import Any, Dict, List
 import logging
@@ -46,6 +47,17 @@ class Pipeline:
             logger.exception(e)
             raise CustomException(e, sys)
 
+    def run_model_training(self,data):
+        try:
+            logger.info(" Run model Training ")
+            classifier = TrainTokenClassifier(model_training_config=self.config.get_model_train_pipeline_config(),
+                                              processed_data=data)
+            classifier.train()
+            logger.info(" Training Completed ")
+
+        except Exception as e:
+            logger.exception(e)
+            raise CustomException(e, sys)
 
     def run_pipeline(self):
         data = self.run_data_ingestion()
@@ -53,8 +65,11 @@ class Pipeline:
         if sum(checks[0]) == 3:
             logger.info("Checks Completed")
             processed_data = self.run_data_preparation(data=data)
+            logger.info(f"Preprocessed Data {processed_data}")
+            self.run_model_training(data=processed_data)
         else:
             logger.error("Checks Failed")
+
 
 
 if __name__ == "__main__":

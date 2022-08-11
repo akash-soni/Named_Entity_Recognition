@@ -7,3 +7,7 @@ DataValidationConfig = namedtuple("DataValidationConfig",
 
 DataPreprocessingConfig = namedtuple("DataPreprocessingConfig", ["model_name", "tags", "index2tag",
                                                                  "tag2index", "tokenizer"])
+
+ModelTrainConfig = namedtuple("ModelTrainConfig", ["model_name", "index2tag", "tag2index",
+                                                   "tokenizer", "xlmr_config", "epochs",
+                                                   "batch_size", "save_steps","roberta_path", "output_dir"])

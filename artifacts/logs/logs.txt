@@ -203,3 +203,267 @@ AttributeError: 'Configuration' object has no attribute 'get_data_validation_con
 [ 2022-08-11 14:05:40,428 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
 [ 2022-08-11 14:05:40,667 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
 [ 2022-08-11 14:05:41,335 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:23:29,295 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-11 19:23:30,842 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 19:23:30,842 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 19:23:30,844 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 19:23:30,844 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 19:23:50,217 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-11 19:23:50,227 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-11 19:23:50,237 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-11 19:23:50,238 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-11 19:23:50,239 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-11 19:23:50,249 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-11 19:23:50,418 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-11 19:23:50,418 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-11 19:23:50,418 ] ner.components.data_validation - INFO -  Data Validation Started 
+[ 2022-08-11 19:23:50,418 ] ner.components.data_validation - INFO -  Checks Initiated  
+[ 2022-08-11 19:23:50,418 ] ner.components.data_validation - INFO -  Checking Columns of all the splits 
+[ 2022-08-11 19:24:02,674 ] ner.components.data_validation - INFO -  Check Results [3, 3, 3]
+[ 2022-08-11 19:24:02,675 ] ner.components.data_validation - INFO -  Checking type check of all the splits 
+[ 2022-08-11 19:24:02,675 ] ner.components.data_validation - INFO -  Type Check Results [3, 3, 3]
+[ 2022-08-11 19:24:02,675 ] ner.components.data_validation - INFO -  Checking null check of all the splits 
+[ 2022-08-11 19:24:14,631 ] ner.components.data_validation - INFO -  Type Check Results [False, False, False]
+[ 2022-08-11 19:24:14,633 ] ner.components.data_validation - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-08-11 19:24:14,633 ] __main__ - INFO - Checks Completed
+[ 2022-08-11 19:24:14,633 ] __main__ - INFO -  Running Data Preparation pipeline 
+[ 2022-08-11 19:24:16,721 ] datasets.fingerprint - WARNING - Parameter 'function'=<function DataPreprocessing.create_tag_names at 0x000001CAE84BF1F0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+[ 2022-08-11 19:24:29,028 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:29,814 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:30,086 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:30,441 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:30,836 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:31,381 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:31,742 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:32,104 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:32,337 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:32,617 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:33,046 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:33,355 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:33,730 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:34,074 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:34,337 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:34,587 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:34,851 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:35,113 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:35,335 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:35,840 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:36,266 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:36,618 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:36,930 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:37,380 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:37,867 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:38,186 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:38,467 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:38,865 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:39,198 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:39,493 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:39,758 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:40,178 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:40,398 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:40,630 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:40,867 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:41,092 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:41,334 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:41,578 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:41,788 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:41,990 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 19:24:42,495 ] __main__ - INFO - Preprocessed Data DatasetDict({
+    validation: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 20000
+    })
+})
+[ 2022-08-11 19:24:42,495 ] __main__ - INFO -  Run model Training 
+[ 2022-08-11 19:24:44,142 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 19:24:46,370 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 19:24:46,393 ] ner.components.model_training - INFO -  Training Started 
+[ 2022-08-11 19:24:46,514 ] ner.components.model_training - INFO - No Roberta model storage directory found creating directory
+[ 2022-08-11 19:24:46,514 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 19:24:47,605 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+[ 2022-08-11 19:25:00,245 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 19:25:37,778 ] ner.components.model_training - INFO -  Training Running 
+[ 2022-08-11 19:25:44,410 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 20:02:19,690 ] ner.components.model_training - INFO -  Result of the training TrainOutput(global_step=70, training_loss=0.8312341417585101, metrics={'train_runtime': 2171.5071, 'train_samples_per_second': 0.461, 'train_steps_per_second': 0.032, 'train_loss': 0.8312341417585101, 'epoch': 10.0}) 
+[ 2022-08-11 20:02:32,347 ] ner.components.model_training - INFO -  Model Saved at [C:\Users\aakas\Documents\ineuron\Projects\NLP\Named_Entity_Recognition\artifacts\model_weight]
+[ 2022-08-11 20:02:32,964 ] __main__ - INFO -  Training Completed 
+[ 2022-08-11 20:15:10,507 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-11 20:15:11,273 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 20:15:11,273 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 20:15:11,273 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 20:15:11,273 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 20:15:22,600 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-11 20:15:22,620 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-11 20:15:22,629 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-11 20:15:22,630 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-11 20:15:22,631 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-11 20:15:22,640 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-11 20:15:22,797 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-11 20:15:22,798 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-11 20:15:22,798 ] ner.components.data_validation - INFO -  Data Validation Started 
+[ 2022-08-11 20:15:22,798 ] ner.components.data_validation - INFO -  Checks Initiated  
+[ 2022-08-11 20:15:22,798 ] ner.components.data_validation - INFO -  Checking Columns of all the splits 
+[ 2022-08-11 20:15:33,172 ] ner.components.data_validation - INFO -  Check Results [3, 3, 3]
+[ 2022-08-11 20:15:33,172 ] ner.components.data_validation - INFO -  Checking type check of all the splits 
+[ 2022-08-11 20:15:33,172 ] ner.components.data_validation - INFO -  Type Check Results [3, 3, 3]
+[ 2022-08-11 20:15:33,172 ] ner.components.data_validation - INFO -  Checking null check of all the splits 
+[ 2022-08-11 20:15:40,142 ] ner.components.data_validation - INFO -  Type Check Results [False, False, False]
+[ 2022-08-11 20:15:40,142 ] ner.components.data_validation - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-08-11 20:15:40,142 ] __main__ - INFO - Checks Completed
+[ 2022-08-11 20:15:40,142 ] __main__ - INFO -  Running Data Preparation pipeline 
+[ 2022-08-11 20:15:41,694 ] datasets.fingerprint - WARNING - Parameter 'function'=<function DataPreprocessing.create_tag_names at 0x000001D13667C280> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+[ 2022-08-11 20:15:51,777 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:52,057 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:52,286 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:52,511 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:52,721 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:52,912 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:53,163 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:53,619 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:53,919 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:54,204 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:54,565 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:54,878 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:55,131 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:55,414 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:55,675 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:55,937 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:56,208 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:56,452 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:56,664 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:57,038 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:57,289 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:57,502 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:57,701 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:57,910 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:58,114 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:58,326 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:58,517 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:58,727 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:58,929 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:59,141 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:59,362 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:59,693 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:15:59,886 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:00,097 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:00,299 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:00,521 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:00,723 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:00,923 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:01,114 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:01,316 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:16:01,919 ] __main__ - INFO - Preprocessed Data DatasetDict({
+    validation: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 20000
+    })
+})
+[ 2022-08-11 20:16:01,919 ] __main__ - INFO -  Run model Training 
+[ 2022-08-11 20:16:03,575 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 20:16:04,685 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 20:16:04,695 ] ner.components.model_training - INFO -  Training Started 
+[ 2022-08-11 20:16:11,015 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 20:16:26,073 ] ner.components.model_training - INFO -  Training Running 
+[ 2022-08-11 20:16:42,291 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 20:26:27,356 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-11 20:26:28,113 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 20:26:28,113 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 20:26:28,113 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 20:26:28,113 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 20:26:42,318 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-11 20:26:42,330 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-11 20:26:42,339 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-11 20:26:42,340 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-11 20:26:42,342 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-11 20:26:42,351 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-11 20:26:42,412 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-11 20:26:42,412 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-11 20:26:42,413 ] ner.components.data_validation - INFO -  Data Validation Started 
+[ 2022-08-11 20:26:42,413 ] ner.components.data_validation - INFO -  Checks Initiated  
+[ 2022-08-11 20:26:42,413 ] ner.components.data_validation - INFO -  Checking Columns of all the splits 
+[ 2022-08-11 20:26:48,787 ] ner.components.data_validation - INFO -  Check Results [3, 3, 3]
+[ 2022-08-11 20:26:48,787 ] ner.components.data_validation - INFO -  Checking type check of all the splits 
+[ 2022-08-11 20:26:48,787 ] ner.components.data_validation - INFO -  Type Check Results [3, 3, 3]
+[ 2022-08-11 20:26:48,787 ] ner.components.data_validation - INFO -  Checking null check of all the splits 
+[ 2022-08-11 20:26:55,099 ] ner.components.data_validation - INFO -  Type Check Results [False, False, False]
+[ 2022-08-11 20:26:55,099 ] ner.components.data_validation - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-08-11 20:26:55,099 ] __main__ - INFO - Checks Completed
+[ 2022-08-11 20:26:55,099 ] __main__ - INFO -  Running Data Preparation pipeline 
+[ 2022-08-11 20:26:56,662 ] datasets.fingerprint - WARNING - Parameter 'function'=<function DataPreprocessing.create_tag_names at 0x0000029B46809280> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+[ 2022-08-11 20:27:06,389 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:06,662 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:06,894 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:07,114 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:07,318 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:07,520 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:07,731 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:08,055 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:08,266 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:08,489 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:08,760 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:08,974 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:09,174 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:09,385 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:09,617 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:09,839 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:10,052 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:10,240 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:10,423 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:10,746 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:11,007 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:11,217 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:11,419 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:11,611 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:11,821 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:12,025 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:12,226 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:12,428 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:12,650 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:12,852 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:13,065 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:13,397 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:13,600 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:13,801 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:14,003 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:14,213 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:14,414 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:14,615 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:14,847 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:15,046 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:27:15,533 ] __main__ - INFO - Preprocessed Data DatasetDict({
+    validation: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 20000
+    })
+})
+[ 2022-08-11 20:27:15,533 ] __main__ - INFO -  Run model Training 
+[ 2022-08-11 20:27:17,067 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 20:27:18,172 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 20:27:18,192 ] ner.components.model_training - INFO -  Training Started 
+[ 2022-08-11 20:27:24,970 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 20:27:34,665 ] ner.components.model_training - INFO -  Training Running 
+[ 2022-08-11 20:27:44,922 ] ner.components.model_architecture - INFO - Model Initiated
