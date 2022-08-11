@@ -7,7 +7,6 @@ from ner.entity.config_entity import ModelTrainConfig
 from typing import Any, Dict, AnyStr
 import logging
 import sys
-import os
 import numpy as np
 from seqeval.metrics import f1_score
 
@@ -42,22 +41,8 @@ class TrainTokenClassifier:
 
     def model_init(self):
         try:
-            if not os.path.isdir(self.model_training_config.roberta_path):
-
-                print("hit if block")
-                logger.info(f"No Roberta model storage directory found creating directory")
-                os.mkdir(self.model_training_config.roberta_path)   
-                XLMRoberta =  XLMRobertaForTokenClassification.from_pretrained(self.model_training_config.model_name,
+            return XLMRobertaForTokenClassification.from_pretrained(self.model_training_config.model_name,
                                                                     config=self.model_training_config.xlmr_config)
-        
-                XLMRoberta.save_pretrained(self.model_training_config.roberta_path)
-                return XLMRoberta
-            else:
-                print("hit else block")
-                XLMRoberta = XLMRobertaForTokenClassification.from_pretrained(self.model_training_config.roberta_path)
-                print("roberta model loaded from local")
-                return XLMRoberta
-
         except Exception as e:
             logger.exception(e)
             raise CustomException(e, sys)
@@ -99,8 +84,8 @@ class TrainTokenClassifier:
                               args=self.create_training_args(),
                               data_collator=self.data_collector(),
                               compute_metrics=self.compute_metrics,
-                              train_dataset=self.processed_data["train"].select(range(100)),
-                              eval_dataset=self.processed_data["validation"].select(range(10)),
+                              train_dataset=self.processed_data["train"].select(range(1000)),
+                              eval_dataset=self.processed_data["validation"].select(range(100)),
                               tokenizer=self.model_training_config.tokenizer)
 
             logger.info(" Training Running ")

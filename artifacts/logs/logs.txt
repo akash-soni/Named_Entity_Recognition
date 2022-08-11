@@ -467,3 +467,122 @@ AttributeError: 'Configuration' object has no attribute 'get_data_validation_con
 [ 2022-08-11 20:27:24,970 ] ner.components.model_architecture - INFO - Model Initiated
 [ 2022-08-11 20:27:34,665 ] ner.components.model_training - INFO -  Training Running 
 [ 2022-08-11 20:27:44,922 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 20:57:26,889 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-11 20:57:27,657 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 20:57:27,657 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 20:57:27,657 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 20:57:27,657 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 20:57:37,251 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-11 20:57:37,271 ] __main__ - INFO -  Running Data Ingestion pipeline 
+[ 2022-08-11 20:57:37,271 ] ner.components.data_ingestion - INFO -  Data Ingestion Log Started 
+[ 2022-08-11 20:57:37,271 ] ner.components.data_ingestion - INFO - Loading Data from Hugging face 
+[ 2022-08-11 20:57:37,278 ] ner.components.data_ingestion - INFO - loading dataset from local disk
+[ 2022-08-11 20:57:37,286 ] fsspec.local - DEBUG - open file: C:/Users/aakas/Documents/ineuron/Projects/NLP/Named_Entity_Recognition/artifacts/data/dataset_dict.json
+[ 2022-08-11 20:57:37,344 ] ner.components.data_ingestion - INFO - loading dataset completed
+[ 2022-08-11 20:57:37,344 ] __main__ - INFO -  Running Data validation Pipeline 
+[ 2022-08-11 20:57:37,344 ] ner.components.data_validation - INFO -  Data Validation Started 
+[ 2022-08-11 20:57:37,344 ] ner.components.data_validation - INFO -  Checks Initiated  
+[ 2022-08-11 20:57:37,344 ] ner.components.data_validation - INFO -  Checking Columns of all the splits 
+[ 2022-08-11 20:57:45,181 ] ner.components.data_validation - INFO -  Check Results [3, 3, 3]
+[ 2022-08-11 20:57:45,181 ] ner.components.data_validation - INFO -  Checking type check of all the splits 
+[ 2022-08-11 20:57:45,182 ] ner.components.data_validation - INFO -  Type Check Results [3, 3, 3]
+[ 2022-08-11 20:57:45,182 ] ner.components.data_validation - INFO -  Checking null check of all the splits 
+[ 2022-08-11 20:57:51,675 ] ner.components.data_validation - INFO -  Type Check Results [False, False, False]
+[ 2022-08-11 20:57:51,675 ] ner.components.data_validation - INFO -  Checks Completed Result : [[True, True, True]]
+[ 2022-08-11 20:57:51,675 ] __main__ - INFO - Checks Completed
+[ 2022-08-11 20:57:51,680 ] __main__ - INFO -  Running Data Preparation pipeline 
+[ 2022-08-11 20:57:53,159 ] datasets.fingerprint - WARNING - Parameter 'function'=<function DataPreprocessing.create_tag_names at 0x0000019C611C1040> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+[ 2022-08-11 20:58:03,412 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:03,710 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:03,922 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:04,128 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:04,329 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:04,515 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:04,707 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:05,041 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:05,231 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:05,422 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:05,673 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:05,885 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:06,075 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:06,297 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:06,519 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:06,730 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:06,933 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:07,163 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:07,354 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:07,679 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:08,090 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:08,372 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:08,581 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:08,794 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:09,026 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:09,227 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:09,441 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:09,658 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:09,861 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:10,084 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:10,378 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:10,760 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:10,996 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:11,231 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:11,516 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:11,867 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:12,200 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:12,598 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:12,975 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:13,277 ] ner.components.data_preperation - INFO -  Tokenize and align labels 
+[ 2022-08-11 20:58:13,891 ] __main__ - INFO - Preprocessed Data DatasetDict({
+    validation: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    test: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 10000
+    })
+    train: Dataset({
+        features: ['attention_mask', 'input_ids', 'labels', 'ner_tags_str'],
+        num_rows: 20000
+    })
+})
+[ 2022-08-11 20:58:13,891 ] __main__ - INFO -  Run model Training 
+[ 2022-08-11 20:58:15,375 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 20:58:16,506 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 20:58:16,515 ] ner.components.model_training - INFO -  Training Started 
+[ 2022-08-11 20:58:16,537 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 20:58:17,561 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+[ 2022-08-11 20:58:27,340 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 20:58:37,868 ] ner.components.model_training - INFO -  Training Running 
+[ 2022-08-11 20:58:37,915 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 20:58:40,294 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+[ 2022-08-11 20:58:46,688 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 21:20:52,153 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2022-08-11 21:20:52,889 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 21:20:52,889 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 21:20:52,889 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2022-08-11 21:20:52,889 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2022-08-11 21:21:00,217 ] ner.config.configurations - INFO - Reading Config file
+[ 2022-08-11 21:21:00,227 ] __main__ - INFO -  prediction started 
+[ 2022-08-11 21:21:00,237 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:01,425 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+[ 2022-08-11 21:21:01,437 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:02,546 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 21:21:02,558 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:03,627 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/xlm-roberta-base HTTP/1.1" 200 1904
+[ 2022-08-11 21:21:03,636 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:04,649 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/sentencepiece.bpe.model HTTP/1.1" 200 0
+[ 2022-08-11 21:21:04,656 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:05,744 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+[ 2022-08-11 21:21:05,756 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:06,779 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+[ 2022-08-11 21:21:06,789 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:07,881 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+[ 2022-08-11 21:21:07,891 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:08,864 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+[ 2022-08-11 21:21:08,874 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:09,867 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 21:21:11,191 ] urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+[ 2022-08-11 21:21:12,183 ] urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /xlm-roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+[ 2022-08-11 21:21:20,521 ] ner.components.model_architecture - INFO - Model Initiated
+[ 2022-08-11 21:21:53,740 ] __main__ - INFO -  Prediction Completed 

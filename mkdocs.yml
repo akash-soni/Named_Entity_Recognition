@@ -7,6 +7,7 @@ nav:
   - Validation: Data Validation.md
   - Data Preperation: Data Preperation.md
   - Model Training: Model Training.md
+  - Prediction: Prediction.md
 
 site_author: Akash soni
 site_description: >-

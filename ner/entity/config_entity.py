@@ -10,4 +10,9 @@ DataPreprocessingConfig = namedtuple("DataPreprocessingConfig", ["model_name", "
 
 ModelTrainConfig = namedtuple("ModelTrainConfig", ["model_name", "index2tag", "tag2index",
                                                    "tokenizer", "xlmr_config", "epochs",
-                                                   "batch_size", "save_steps","roberta_path", "output_dir"])
+                                                   "batch_size", "save_steps", "output_dir"])
+
+ModelPredConfig = namedtuple("ModelPredConfig", ["model_name", "index2tag", "tag2index",
+                                                   "tokenizer", "xlmr_config", "model_dir"])
+
+TestPipelineConfig = namedtuple("TestPipelineConfig", ["dataset_name", "subset_name"])
