@@ -5,6 +5,7 @@ nav:
   - Home: index.md
   - Ingestion: Data Ingestion.md
   - Validation: Data Validation.md
+  - Data Preperation: Data Preperation.md
 
 site_author: Akash soni
 site_description: >-

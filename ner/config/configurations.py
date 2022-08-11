@@ -1,7 +1,8 @@
+from lib2to3.pgen2 import token
 import os
 from ner.utils.util import read_config
 from ner.exception.exception import CustomException
-from ner.entity.config_entity import DataIngestionConfig, DataValidationConfig
+from ner.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataPreprocessingConfig
 from transformers import AutoTokenizer, AutoConfig
 from from_root import from_root
 from ner.constants import *
@@ -62,7 +63,39 @@ class Configuration:
             )
 
             return data_validation_config
+
+        except Exception as e:
+            logger.exception(e)
+            raise CustomException(e, sys)
+
+    def get_data_preprocessing_config(self) -> DataPreprocessingConfig:
+        try:
+            model_name = self.config[BASE_MODEL_CONFIG][BASE_MODEL_NAME]
+            tags = self.config[DATA_PREPROCESSING_KEY][NER_TAGS_KEY]
+
+            index2tag = {idx: tag for idx, tag in enumerate(tags)}
+            tag2index = {tag: idx for idx, tag in enumerate(tags)}
+
+            tokenizer_store = os.path.join(from_root(), self.config[PATH_KEY][ARTIFACTS_KEY],
+                                      self.config[PATH_KEY][TOKENIZER_PATH])
+            print(tokenizer_store)
             
+            # loading pretrained "xlm-roberta-base" model
+            if not os.path.isdir(tokenizer_store):
+                os.mkdir(tokenizer_store)
+                tokenizer = AutoTokenizer.from_pretrained(self.config[BASE_MODEL_CONFIG][BASE_MODEL_NAME])
+                tokenizer.save_pretrained(tokenizer_store)
+            else:
+                tokenizer = AutoTokenizer.from_pretrained(tokenizer_store)
+
+            data_preprocessing_config = DataPreprocessingConfig(
+                model_name=model_name,
+                tags=tags,
+                index2tag=index2tag,
+                tag2index=tag2index,
+                tokenizer=tokenizer
+            )
+            return data_preprocessing_config
         except Exception as e:
             logger.exception(e)
             raise CustomException(e, sys)

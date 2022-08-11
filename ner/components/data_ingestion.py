@@ -39,6 +39,7 @@ class DataIngestion:
 
                 logger.info(f"Dataset loading completed")
                 logger.info(f"Dataset Info : {pan_en_data}")
+                return pan_en_data
             else:
                 logger.info(f"loading dataset from local disk")
                 # reloading dataset from local drive

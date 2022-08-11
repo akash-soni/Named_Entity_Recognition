@@ -6,6 +6,7 @@ ARTIFACTS_KEY = "artifacts"
 LOGS_KEY = "logs"
 MODEL_WEIGHT_KEY = "model_weight"
 SERIALIZED_OBJECTS = "serialized_objects"
+TOKENIZER_PATH = "tokenizer_store"
 
 DATA_INGESTION_KEY = "data_ingestion_config"
 DATASET_NAME = "dataset_name"

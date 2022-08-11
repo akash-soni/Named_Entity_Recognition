@@ -4,6 +4,7 @@ paths:
   logs: logs
   model_weight: model_weight
   serialized_objects: serialized_objects
+  tokenizer_store: tokenizer_model
 
 data_ingestion_config:
   dataset_name: xtreme

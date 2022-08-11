@@ -132,6 +132,9 @@ dataset.arrow
 state.json
 dataset_info.json
 
+
+/artifacts
+
 # Pyre type checker
 .pyre/
 
