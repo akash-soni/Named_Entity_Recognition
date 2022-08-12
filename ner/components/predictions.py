@@ -11,9 +11,10 @@ logger = logging.getLogger(__name__)
 
 class PredictionClassifier:
 
-    def __init__(self, model_prediction_config: ModelPredConfig):
+    def __init__(self, model_prediction_config: ModelPredConfig, text: str):
         self.model_prediction_config = model_prediction_config
-        pass
+        self.text = text
+    
 
     def get_pred_ids(self, predictions, word_ids):
         prediction = [i.item() for i in predictions[0]]
@@ -35,8 +36,8 @@ class PredictionClassifier:
             XLMRobertaForTokenClassification.from_pretrained(self.model_prediction_config.model_dir,
                                                              config = self.model_prediction_config.xlmr_config).to(device)
         )
-        text = input("ENTER TEXT SENTENCE")
-        tokenized_input = self.model_prediction_config.tokenizer(text.split(), is_split_into_words=True)
+        #text = input("ENTER TEXT SENTENCE")
+        tokenized_input = self.model_prediction_config.tokenizer(self.text.split(), is_split_into_words=True)
         word_ids = tokenized_input.word_ids()
 
         print(device)
@@ -49,6 +50,7 @@ class PredictionClassifier:
 
         prediction_ids = self.get_pred_ids(predictions, word_ids)
         predicted_output = [self.model_prediction_config.index2tag[idx] for idx in prediction_ids]
-        print(predicted_output)
+        # print(predicted_output)
+        return predicted_output
 
 
